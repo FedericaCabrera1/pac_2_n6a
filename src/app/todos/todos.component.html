@@ -1,8 +1,16 @@
-<div class="container">
-  <h1 class="mt-5">Realizar la consigna debajo de este mensaje</h1>
-</div>
-
-<!-- Html faltante -->
-<div>
-  <button class="btn btn-primary" (click)="randomMethod()">Search</button>
+<div class="todos-container">
+  <h1>Lista de tareas</h1>
+  <input type="text" [(ngModel)]="searchText" (input)="updateSearchButtonVisibility()" placeholder="Buscar tarea...">
+  <button *ngIf="showSearchButton" (click)="searchTodos()">Buscar tareas</button>
+  <ul *ngIf="filteredTodos.length > 0; else noResults">
+    <li *ngFor="let todo of filteredTodos">
+      <div>{{ todo.title }} - <span [class]="todo.completed ? 'completed' : 'pending'">
+        {{ todo.completed ? 'Completado' : 'Pendiente' }}
+      </span></div>
+      <button (click)="goToDetail(todo.id)">Ver Detalle</button>
+    </li>
+  </ul>
+  <ng-template #noResults>
+    <p>No se encontraron resultados.</p>
+  </ng-template>
 </div>

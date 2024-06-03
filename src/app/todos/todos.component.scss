@@ -1,0 +1,85 @@
+.todos-container {
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 600px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    h1 {
+      margin-bottom: 20px;
+    }
+  
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+    }
+  
+    button:hover {
+      background-color: #0056b3;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+    }
+  
+    li {
+      background-color: #fff;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .completed {
+      color: green;
+    }
+  
+    .pending {
+      color: red;
+    }
+  }
+  .todos-container ul li {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .todos-container ul li button {
+    display: block;
+    background: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .todos-container ul li button:hover {
+    text-decoration: none;
+  }
+  

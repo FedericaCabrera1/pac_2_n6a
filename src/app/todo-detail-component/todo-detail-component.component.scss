@@ -1,0 +1,21 @@
+.todo-detail-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 80px auto;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    top: 5px; 
+    left: 20px;
+    position: absolute;
+  }
+  
